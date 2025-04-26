@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -50,12 +51,15 @@ class _MyHomePageState extends State<MyHomePage>{
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 6, bottom: 6),
+              padding: const EdgeInsets.only(top: 6, right: 27),
               child: CircleAvatar(
-                minRadius: 25,
-                maxRadius: 40,
+                backgroundColor: Colors.white,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(40),
+                  child: Image.asset('assets/images/image.png'),
+                ),
+                ),
               ),
-            )
             ],
         ),
       ),
