@@ -1,3 +1,5 @@
+import 'dart:typed_data';
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -47,10 +49,59 @@ class _MyHomePageState extends State<MyHomePage> {
                 fit: BoxFit.fitWidth,
               ),
             ),
+            Container(
+              width: double.infinity,
+              height: 104,
+              // color: Colors.purpleAccent,
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: SizedBox(
+                      height: 14,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(top: 7.0),
+                            child: Container(
+                              width: 46,
+                              height: 1,
+                              color: Color(0xFFd8e3ca),
+                            ),
+                          ),
+                          Text(
+                            "Offers",
+                            style: TextStyle(
+                              fontSize: 12.85,
+                              fontWeight: FontWeight.w300,
+                              fontFamily: 'Roboto',
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 7.0),
+                            child: Container(
+                              width: 275,
+                              height: 1,
+                              color: Color(0xFFd8e3ca),),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Row(
+                      children: [
+
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
-
     );
   }
 }
